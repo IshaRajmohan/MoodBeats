@@ -1,5 +1,5 @@
-```markdown
-# MoodBeats — Real-Time Emotion-Aware Music Recommendation System
+
+#  MoodBeats — Real-Time Emotion-Aware Music Recommendation System
 
 MoodBeats is a full-stack web application that performs **real-time facial emotion analysis** using the user's webcam and dynamically generates personalized **Spotify playlists** based on the detected mood.
 
@@ -48,6 +48,7 @@ The system combines computer vision (via `face-api.js`), emotion-to-music mappin
 1. Go to [Spotify Developer Dashboard](https://developer.spotify.com/dashboard/)
 2. Create a new app
 3. Copy your **Client ID** and **Client Secret**
+
 ### Environment Configuration
 
 Create a `.env` file in the `backend/` directory:
@@ -56,8 +57,7 @@ Create a `.env` file in the `backend/` directory:
 SPOTIFY_CLIENT_ID=your_spotify_client_id
 SPOTIFY_CLIENT_SECRET=your_spotify_client_secret
 JWT_SECRET_KEY=your_strong_jwt_secret_key_here
-MONGO_URI
-```
+MONGO_URI=mongodb://localhost:27017/moodbeats
 
 ### Installation & Running
 
