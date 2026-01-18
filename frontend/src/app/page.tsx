@@ -168,7 +168,7 @@ function OnboardingFlow({ onComplete }: { onComplete: () => void }) {
                 if (step < steps.length - 1) {
                   setStep(step + 1)
                 } else {
-                  onComplete()
+                  window.location.href = "http://127.0.0.1:5000/auth/spotify/login"
                 }
               }}
             >

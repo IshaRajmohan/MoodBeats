@@ -3,6 +3,7 @@ from app.services.sentiment_analyzer import SentimentAnalyzer
 
 bp = Blueprint('emotion_text', __name__, url_prefix='/api/emotion')
 
+# Initialize analyzer once
 analyzer = SentimentAnalyzer()
 
 @bp.route('/analyze-text', methods=['POST'])
