@@ -1,11 +1,11 @@
 ```markdown
-# 🎧 MoodBeats — Real-Time Emotion-Aware Music Recommendation System
+# MoodBeats — Real-Time Emotion-Aware Music Recommendation System
 
 MoodBeats is a full-stack web application that performs **real-time facial emotion analysis** using the user's webcam and dynamically generates personalized **Spotify playlists** based on the detected mood.
 
 The system combines computer vision (via `face-api.js`), emotion-to-music mapping, and the **Spotify Web API** to deliver an adaptive and immersive music experience.
 
-## ✨ Features
+## Features
 
 - Real-time facial emotion detection from webcam feed
 - Mapping of detected emotions to Spotify musical attributes (valence, energy)
@@ -14,7 +14,7 @@ The system combines computer vision (via `face-api.js`), emotion-to-music mappin
 - Persistent storage of user data and Spotify tokens in MongoDB
 - Clean, interactive frontend dashboard with mood visualization
 
-## 🛠️ Tech Stack
+## Tech Stack
 
 ### Frontend
 - Next.js (React + TypeScript)
@@ -33,31 +33,7 @@ The system combines computer vision (via `face-api.js`), emotion-to-music mappin
 ### External API
 - Spotify Web API (OAuth 2.0 + Recommendations)
 
-## 📁 Project Structure
-
-```
-MoodBeats/
-├── backend/
-│   ├── app.py                     # Flask app entry point
-│   ├── db.py                      # MongoDB connection
-│   ├── routes/
-│   │   ├── spotify_routes.py      # Spotify OAuth & JWT handling
-│   │   ├── playlist_routes.py     # Mood-based playlist generation
-│   │   └── emotion_routes.py      # Emotion storage endpoints
-│   └── services/
-│       ├── mood_mapper.py         # Emotion → music attribute mapping
-│       └── spotify_token.py       # Token refresh logic
-│
-├── frontend/
-│   ├── app/
-│   │   └── dashboard/
-│   │       └── page.tsx           # Main dashboard with emotion detection
-│   └── components/                # Reusable UI components
-│
-└── README.md
-```
-
-## 🚀 Quick Start
+## Quick Start
 
 ### Prerequisites
 
@@ -71,12 +47,7 @@ MoodBeats/
 
 1. Go to [Spotify Developer Dashboard](https://developer.spotify.com/dashboard/)
 2. Create a new app
-3. Add the following redirect URI:
-   ```
-   http://127.0.0.1:5000/auth/spotify/callback
-   ```
-4. Copy your **Client ID** and **Client Secret**
-
+3. Copy your **Client ID** and **Client Secret**
 ### Environment Configuration
 
 Create a `.env` file in the `backend/` directory:
@@ -85,10 +56,8 @@ Create a `.env` file in the `backend/` directory:
 SPOTIFY_CLIENT_ID=your_spotify_client_id
 SPOTIFY_CLIENT_SECRET=your_spotify_client_secret
 JWT_SECRET_KEY=your_strong_jwt_secret_key_here
-MONGO_URI=mongodb://localhost:27017/moodbeats
+MONGO_URI
 ```
-
-> For MongoDB Atlas, use your connection string instead.
 
 ### Installation & Running
 
